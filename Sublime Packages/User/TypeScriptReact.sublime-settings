@@ -1,0 +1,9 @@
+{
+	"auto_close_tags": true,
+	"extensions":
+	[
+		"tsx"
+	],
+	"indent_to_bracket": true,
+	"tab_size": 2
+}

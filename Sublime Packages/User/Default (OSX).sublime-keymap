@@ -1,0 +1,22 @@
+[
+    { "keys": ["ctrl+shift+up"], "command": "swap_line_up" },
+    { "keys": ["ctrl+shift+down"], "command": "swap_line_down" },
+    { "keys": ["ctrl+shift+d"], "command": "duplicate_line" },
+    { "keys": ["ctrl+]"], "command": "indent" },
+    { "keys": ["ctrl+["], "command": "unindent" },
+    { "keys": ["ctrl+j"], "command": "join_lines" },
+    { "keys": ["ctrl+s"], "command": "save" },
+    { "keys": ["ctrl+z"], "command": "undo" },
+    { "keys": ["ctrl+shift+z"], "command": "redo" },
+    { "keys": ["ctrl+w"], "command": "close" },
+    { "keys": ["ctrl+d"], "command": "find_under_expand" },
+    { "keys": ["ctrl+c"], "command": "copy" },
+    { "keys": ["ctrl+v"], "command": "paste" },
+    { "keys": ["ctrl+shift+v"], "command": "paste_and_indent" },
+    { "keys": ["ctrl+x"], "command": "cut" },
+    { "keys": ["ctrl+shift+l"], "command": "split_line" },
+    { "keys": ["ctrl+f"], "command": "show_panel", "args": {"panel": "find", "reverse": false} },
+    { "keys": ["ctrl+shift+f"], "command": "show_panel", "args": {"panel": "find_in_files"} },
+    { "keys": ["f3"], "command": "find_next" },
+    { "keys": ["ctrl+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"} }
+]

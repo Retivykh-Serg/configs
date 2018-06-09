@@ -1,0 +1,23 @@
+[
+    { "keys": ["ctrl+shift+q"], "command": "toggle_side_bar" },
+    { "keys": ["alt+shift+0"], "command": "fold_by_level", "args": {"level": 1} },
+    { "keys": ["alt+shift+-"], "command": "fold_by_level", "args": {"level": 2} },
+    { "keys": ["alt+shift+="], "command": "unfold_all" },
+    { "keys": ["alt+shift+6"],
+       "caption": "2 cols (full - 2)",
+       "command": "set_layout",
+       "args": { "cols": [0.0, 0.5, 1.0],
+             "rows": [0.0, 0.5, 1.0],
+             "cells": [ [0, 0, 1, 1], [1, 0, 2, 2], [0, 1, 1, 2] ]
+        }
+    },
+    { "keys": ["alt+shift+7"],
+       "caption": "2 cols (full - 2)",
+       "command": "set_layout",
+       "args": { "cols": [0.0, 0.5, 1.0],
+             "rows": [0.0, 0.5, 1.0],
+             "cells": [ [0, 0, 1, 2], [1, 0, 2, 1], [1, 1, 2, 2] ]
+        }
+    },
+    { "keys": ["alt+shift+p"], "command": "js_prettier" }
+]

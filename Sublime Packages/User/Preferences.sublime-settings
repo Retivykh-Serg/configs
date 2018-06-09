@@ -1,0 +1,64 @@
+{
+	"binary_file_patterns":
+	[
+		"*.coverage",
+		"*.dds",
+		"*.eot",
+		"*.gif",
+		"*.ico",
+		"*.jar",
+		"*.jpeg",
+		"*.jpg",
+		"*.pdf",
+		"*.png",
+		"*.swf",
+		"*.tga",
+		"*.ttf",
+		"*.zip",
+		".tox/**",
+		"/home/sergei/www/mcmcauto/.tox/**",
+		"__pycache__/**",
+		"_notes/**",
+		"htmlcov/**",
+		"lyrisreseller/__pycache__/**",
+		"lyrisweb/core/__pycache__/**",
+		"magictracker/static/build/**"
+	],
+	"bold_folder_labels": true,
+	"caret_style": "phase",
+	"color_scheme": "Packages/User/SublimeLinter/Afterglow-monokai (Flake8Lint) (SL).tmTheme",
+	"ensure_newline_at_eof_on_save": true,
+	"fade_fold_buttons": false,
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		"htmlcov"
+	],
+	"font_size": 12,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"FlowIDE",
+		"JavaScriptNext - ES6 Syntax",
+		"Python",
+		"sublime-prettier-master",
+		"Vintage"
+	],
+	"indent_to_bracket": true,
+	"margin": 2,
+	"save_on_focus_lost": true,
+	"show_definitions": false,
+	"show_full_path": true,
+	"sidebar_no_icon": false,
+	"sidebar_size_12": true,
+	"status_bar_brighter": true,
+	"tabs_medium": true,
+	"tabs_padding_medium": true,
+	"theme": "Afterglow-orange.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"wrap_width": 120
+}

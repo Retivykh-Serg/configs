@@ -1,0 +1,39 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"All Autocomplete",
+		"Babel",
+		"Djaneiro",
+		"Environment Settings",
+		"FlowIDE",
+		"Focus File on Sidebar",
+		"Function Name Display",
+		"JavaScriptNext - ES6 Syntax",
+		"Jinja2",
+		"JSON Reindent",
+		"JsPrettier",
+		"MagicPython",
+		"Modific",
+		"Package Control",
+		"Python Flake8 Lint",
+		"React Templates",
+		"Sass",
+		"SideBarEnhancements",
+		"Split Line",
+		"StatusMessage",
+		"SublimeLinter",
+		"SublimeLinter-flake8",
+		"SublimeLinter-flow",
+		"SublimeLinter-pylint",
+		"SublimeLinter-tslint",
+		"SyncedSideBar",
+		"Theme - Afterglow",
+		"Tomorrow Night Italics Color Scheme",
+		"TypeScript",
+		"TypeScript Syntax"
+	]
+}
