@@ -1,0 +1,91 @@
+global:
+  scrape_interval:     5s
+  evaluation_interval: 1m
+
+# A scrape configuration containing exactly one host to scrape.
+scrape_configs:
+  - job_name: 'grafana'
+    scrape_interval: 15s
+    static_configs:
+    - targets: ['nodeexporter:9100', 'cadvisor:8080']
+      labels:
+        app: development
+        env: infra
+
+  - job_name: 'sentry'
+    scrape_interval: 15s
+    static_configs:
+    - targets: ['10.0.2.7:9001', '10.0.2.7:9002']
+      labels:
+        app: development
+        env: infra
+
+  - job_name: 'cms'
+    scrape_interval: 5s
+    static_configs:
+    - targets: ['10.0.0.13:9001', '10.0.0.13:9002']
+      labels:
+        app: app
+        env: production
+
+  - job_name: 'app_1'
+    scrape_interval: 5s
+    static_configs:
+    - targets: ['10.0.0.4:9001', '10.0.0.4:9002']
+      labels:
+        app: app
+        env: production
+
+  - job_name: 'app_2'
+    scrape_interval: 5s
+    static_configs:
+    - targets: ['10.0.0.6:9001', '10.0.0.6:9002']
+      labels:
+        app: app
+        env: production
+
+  - job_name: 'app_worker'
+    scrape_interval: 5s
+    static_configs:
+    - targets: ['10.0.0.15:9001', '10.0.0.15:9002']
+      labels:
+        app: app
+        env: production
+
+  - job_name: 'app_postgres'
+    scrape_interval: 5s
+    static_configs:
+    - targets: ['10.0.0.8:9100']
+      labels:
+        app: app
+        env: production
+
+  - job_name: 'app_redis'
+    scrape_interval: 5s
+    static_configs:
+    - targets: ['10.0.0.19:9100']
+      labels:
+        app: app
+        env: production
+
+  - job_name: 'app_dev'
+    basic_auth:
+      username: monitoring
+      password: pwd
+    scrape_interval: 15s
+    static_configs:
+      - targets: ['app.ru:9001', 'app.ru:9002']
+        labels:
+          app: app
+          env: dev
+
+  - job_name: 'app_staging'
+    basic_auth:
+      username: monitoring
+      password: pwd
+    scrape_interval: 15s
+    static_configs:
+      - targets: ['app:9001', 'app:9002']
+        labels:
+          app: app
+          env: staging

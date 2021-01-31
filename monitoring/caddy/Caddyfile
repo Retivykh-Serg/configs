@@ -1,0 +1,19 @@
+:9001 {
+    # basicauth / {monitoring} {pwd}
+    proxy / nodeexporter:9100 {
+            transparent
+        }
+
+    errors stderr
+    tls off
+}
+
+:9002 {
+    # basicauth / {monitoring} {pwd}
+    proxy / cadvisor:8080 {
+            transparent
+        }
+
+    errors stderr
+    tls off
+}
